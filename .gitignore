@@ -4,3 +4,5 @@ node_modules
 /playground/node_modules
 /my-playground/target
 /my-playground/node_modules
+my-playground/target/
+my-playground/target/node_modules
