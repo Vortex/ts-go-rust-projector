@@ -1,8 +1,19 @@
+enum RSEnum {
+    Foo2(Option<i32>),
+    Foo(i32),
+    Bar(String),
+    Baz(Vec<String>),
+}
+
 fn main() {
-    let mut x = 5;
-    let z = &mut x;
+    let foo = RSEnum::Foo(5);
 
-    *z = 7;
+    if let RSEnum::Foo(value) = foo {}
 
-    println!("{:?}", z);
+    match foo {
+        RSEnum::Foo2(Some(value)) => {}
+        RSEnum::Foo2(None) => {}
+        RSEnum::Foo(value) => {}
+        _ => {}
+    }
 }
