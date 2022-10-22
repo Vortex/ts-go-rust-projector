@@ -1,8 +1,8 @@
 fn main() {
-    let a = vec![];
-    let mut b = a;
+    let mut x = 5;
+    let z = &mut x;
 
-    b.push(1);
+    *z = 7;
 
-    println!("{:?}", b);
+    println!("{:?}", z);
 }
