@@ -2,7 +2,5 @@
 node_modules
 /playground/target
 /playground/node_modules
-/my-playground/target
-/my-playground/node_modules
-my-playground/target/
-my-playground/target/node_modules
+my-version/playground/target
+/my-version/playground/node_modules
