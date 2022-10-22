@@ -6,14 +6,16 @@ enum RSEnum {
 }
 
 fn main() {
-    let foo = RSEnum::Foo(5);
+    let foo = Some(5);
 
-    if let RSEnum::Foo(value) = foo {}
+    if let Some(value) = foo {}
 
     match foo {
-        RSEnum::Foo2(Some(value)) => {}
-        RSEnum::Foo2(None) => {}
-        RSEnum::Foo(value) => {}
-        _ => {}
+        Some(value) => {}
+        None => {}
     }
+
+    foo.map(|x| {});
+
+    foo.filter(|x| x < &10);
 }
