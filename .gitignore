@@ -4,3 +4,4 @@ node_modules
 /playground/node_modules
 my-version/playground/target
 /my-version/playground/node_modules
+rust/target
